@@ -1,0 +1,111 @@
+#root {
+  width: 100%;
+  height: 30vh;
+  display: grid;
+  place-items: center;
+}
+
+.carregando {
+  color: #ddd;
+  font-size: 30px;
+  font-weight: 900;
+  position: fixed;
+  display: grid;
+  place-items: center;
+  border-radius: 10px;
+  width: 25%;
+  height: 25%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #333;
+}
+
+.titulo {
+  color: #c6a71c;
+  position: absolute;
+  top: -60%;
+  left: 50%;
+  transform: translateX(-50%);
+  height: 70%;
+}
+
+.outerApp{
+  width: 100%;
+  height: 100%;
+  display: grid;
+  place-items: center;
+  position: relative;
+}
+
+.App {
+  width: 69%;
+  height: 69%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 10%;
+  position: relative;
+}
+
+.App .input {
+  padding: 5px 35px;
+  height: 40%;
+  width: 67%;
+  border-radius: 40px;
+  border-bottom-right-radius: 0;
+  border-top-right-radius: 0;
+  background-color: #222;
+  box-shadow: -2px 4px 10px #1115;
+  border-bottom: 2px solid #a28b26;
+  border-top: 2px solid #a28b26;
+  border-right: 1px solid #a28b26;
+  color: #c6a71c;
+  outline: none;
+  font-size: 40px;
+}
+
+.App .submit {
+  cursor: pointer;
+  width: 17%;
+  height: 40%;
+  border: none;
+  background-color: #222;
+  color: #ddd;
+  font-size: 30px;
+  font-weight: 600;
+  border-radius: 40px;
+  border-bottom: 2px solid #a28b26;
+  border-top: 2px solid #a28b26;
+  border-bottom-left-radius: 0;
+  border-top-left-radius: 0;
+  box-shadow: -2px 4px 10px #1115;
+}
+
+.outerApp .random {
+  background-color: transparent;
+  border: none;
+  color: #aaa;
+  position: absolute;
+  cursor: pointer;
+  right: 33%;
+  bottom: 9%;
+}
+
+.outerApp .random span {
+  font-size: 40px;
+  transform: rotate(10deg);
+}
+.outerApp .home {
+  background-color: transparent;
+  border: none;
+  color: #a28b26;
+  position: absolute;
+  cursor: pointer;
+  left: 18%;
+  bottom: 9%;
+  z-index: 10;
+}
+.outerApp .home span {
+  font-size: 40px;
+}
